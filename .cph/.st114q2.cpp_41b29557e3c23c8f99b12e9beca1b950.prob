@@ -1,0 +1,1 @@
+{"name":"Local: st114q2","url":"c:\\cfprog\\st114q2.cpp","tests":[{"id":1703691552965,"input":"3\n2\n1 2\n3\n3 1 2\n4\n2 3 4 1","output":"0\n2\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\cfprog\\st114q2.cpp","group":"local","local":true}

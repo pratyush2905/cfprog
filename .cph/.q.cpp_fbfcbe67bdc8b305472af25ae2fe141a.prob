@@ -1,0 +1,1 @@
+{"name":"Local: q","url":"c:\\cfprog\\q.cpp","tests":[{"id":1698734071358,"input":"3\n3\n5\n7","output":"2\n2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\cfprog\\q.cpp","group":"local","local":true}
