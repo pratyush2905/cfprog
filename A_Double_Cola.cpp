@@ -1,60 +1,31 @@
 #include <bits/stdc++.h>
 #define int long long
+#define fr(a, b) for (int i = a; i < b; i++)
+#define rep(i, a, b) for (int i = a; i < b; i++)
+#define all(x) (x).begin(), (x).end()
+#define mod 1000000007
 using namespace std;
 void solve()
 {
     int n;
     cin >> n;
-    int p = 0;
-    while ((5 * pow(2, p)) <= n)
+
+    int r = 1;
+    while (r * 5 < n)
     {
-        p++;
+        n -= r * 5;
+        r *= 2;
     }
-    int ans = 0;
-    if (n <= 5)
-    {
-        if (n == 1)
-            cout << "Sheldon";
-        else if (n == 2)
-            cout << "Leonard";
-
-        else if (n == 3)
-            cout << "Penny";
-
-        else if (n == 4)
-            cout << "Rajesh";
-
-        else if (n == 5)
-            cout << "Howard";
-    }
-    else
-    {
-        int y=1;
-        while (y <= (p+1))
-        {
-            int x = n - y;
-            if (x % 5 == 0)
-            {
-                ans = x / 5;
-            }
-            y++;
-        }
-        if (ans == 1)
-            cout << "Sheldon";
-        else if (ans == 2)
-            cout << "Leonard";
-
-        else if (ans == 3)
-            cout << "Penny";
-
-        else if (ans == 4)
-            cout << "Rajesh";
-
-        else if (ans == 5)
-            cout << "Howard";
-    }
+    string names[] = {"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
+    cout << names[(n - 1) / r] << endl;
 }
 signed main()
 {
-    solve();
+    int t;
+    //cin >> t;
+    t=1;
+    while (t--)
+    {
+        solve();
+    }
 }
