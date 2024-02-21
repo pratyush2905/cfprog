@@ -50,6 +50,7 @@
         "list": "cpp",
         "vector": "cpp",
         "span": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "complex": "cpp"
     }
 }
